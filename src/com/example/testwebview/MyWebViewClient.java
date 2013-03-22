@@ -11,8 +11,9 @@ public class MyWebViewClient extends WebViewClient {
 		super.onPageStarted(view, url, favicon);
 		StringBuilder builder = new StringBuilder(
 				"javascript:window.document.body.style.paddingTop='100px';");
-		builder.append("document.body.style.background='#cfcfcf';");
-		builder.append("document.body.style.color='#ff0066';");
+		builder.append("document.body.style.background='#b8b8b8';");
+		builder.append("document.body.style.color='#063F5D';");
+		
 		view.loadUrl(builder.toString());
 	}
 
