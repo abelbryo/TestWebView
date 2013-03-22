@@ -19,17 +19,11 @@ public class MainActivity extends Activity {
 
 		mWebView = (WebView) findViewById(R.id.content);
 		mWebView.getSettings().setJavaScriptEnabled(true);
-		Runnable r = new Runnable() {
-
-			@Override
-			public void run() {
+	
 				WebViewClient wvc = new MyWebViewClient();
 				mWebView.setWebViewClient(wvc);
 				mWebView.loadUrl("file:///android_asset/hello.html");
-			}
-		};
-		new Thread(r).start();
-
+		
 		
 	}
 
